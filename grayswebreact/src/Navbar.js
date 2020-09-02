@@ -1,6 +1,16 @@
 import React, { Component } from 'react'
 
 export default class Navbar extends Component {
+  constructor(props){
+    super(props);
+    this.state = {
+      nothingSelected: true,
+      CVselected: false,
+      contactSelected: false,
+      projectsSelected: false,
+    }
+
+  }
   render() {
     return (
       <div>
@@ -9,7 +19,7 @@ export default class Navbar extends Component {
           </div>
 
           <div class="container">
-            <a> CV </a>  <a id="contact"> Contact </a>   <a> Projects </a>
+            <a onClick> CV </a>  <a id="contact"> Contact </a>   <a> Projects </a>
           </div>
       </div>
     )
