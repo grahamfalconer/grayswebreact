@@ -54,6 +54,9 @@ iframe{
 .contact-holder h1{
   margin-right: 30%;
   display: inline;
+
+}
+.contact-holder a, h1{
   color: #FFFFFF;
   text-decoration: none;
 }
