@@ -1,12 +1,13 @@
 import React, { Component } from 'react'
 import './LandingPage.css';
+import Logo from './logo'
+
 
 export default class LandingPage extends Component {
   render() {
     return (
       <div>
-        <div id="div-three"></div>
-
+        <Logo/>
         
       </div>
     )

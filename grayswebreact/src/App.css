@@ -7,7 +7,8 @@
   border-bottom: 10vh whitesmoke solid;
 }
 .logo{
-  font-size: 15vw;
+  height: 10vw;
+  cursor: pointer;
 }
 .cv-frame{
   margin-top: 5%;
@@ -53,6 +54,11 @@ iframe{
 .contact-holder h1{
   margin-right: 30%;
   display: inline;
+  color: #FFFFFF;
+  text-decoration: none;
+}
+.contact-holder h1:hover {
+  color: coral;
 }
 .contact-holder:hover{
   background-color: steelblue;
@@ -66,8 +72,11 @@ h1:hover{
   font-size: 3vw;
 }
 .App-logo {
+  position: absolute;
+  top: 0;
+  left: 0;
   margin-top: 6.5vw;
-  height: 40vmin;
+  height: 100vmin;
   pointer-events: none;
 }
 .logo-holder {
@@ -85,6 +94,8 @@ h1:hover{
   background-color: whitesmoke;
 }
 .container a {
+  position: relative;
+  z-index: 100;
   background-color: steelblue;
   padding: 2vw;
   padding-left: 5vw ;

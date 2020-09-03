@@ -2,23 +2,25 @@ import React, { Component } from 'react'
 
 export default class Contact extends Component {
   render() {
+
+
     return (
       <div>
         <h1> Where to find me? </h1>
         <div className="contact-holder">
-          <img className="link" src={process.env.PUBLIC_URL + '/images/githublogo.png'}></img><h1>Github</h1>
+          <img className="link" src={process.env.PUBLIC_URL + '/images/githublogo.png'}></img><h1 href="https://github.com/grahamfalconer">Github</h1>
         </div>
         <div className="blank-line"></div>
         <div className="contact-holder">
-          <img className="link" src={process.env.PUBLIC_URL + '/images/linkedin.png'}></img><h1>LinkedIn</h1>
+          <img className="link" src={process.env.PUBLIC_URL + '/images/linkedin.png'}></img><h1 href="https://www.linkedin.com/in/graham-falconer-696b0716b/">LinkedIn</h1>
         </div>
         <div className="blank-line"></div>
         <div className="contact-holder">
-          <img className="link" src={process.env.PUBLIC_URL + '/images/email.png'}></img><h1>Email</h1>
+          <address><img className="link" src={process.env.PUBLIC_URL + '/images/email.png'}></img> <a href="mailto:grahamfalconer@icloud.com"> <h1 >Email</h1> </a> </address>
         </div>
         <div className="blank-line"></div>
         <div className="contact-holder">
-          <img className="link" src={process.env.PUBLIC_URL + '/images/phone.png'}></img><h1>Phone</h1>
+        <a href="tel:+44796477988"><img className="link" src={process.env.PUBLIC_URL + '/images/phone.png'}></img><h1>Phone Number: +44796477988 </h1></a>
         </div>
         <div className="blank-line"></div>
         

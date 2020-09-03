@@ -5,6 +5,8 @@ import Projects from './Projects'
 import Contact from './Contact'
 import { Document, Page } from 'react-pdf';
 import LandingPage from './LandingPage'
+import graham from './graham.png'
+import software from './software.png'
 
 
 
@@ -12,7 +14,8 @@ export default class Graysweb extends Component {
   constructor(props){
     super(props);
     this.state = {
-      showing: 'landingPage'
+      showing: 'landingPage',
+      logoImage: [graham, true]
     }
   }
 
@@ -31,11 +34,19 @@ export default class Graysweb extends Component {
   goToHome = () => {
     this.setState({ showing: 'landingPage' })
   }
+  swapName = () => {
+    this.state.logoImage[1] ? this.setState({ logoImage: [software, false] }) : this.setState({ logoImage: [graham, true] })
+  }
+  componentDidMount = () => {
+    setInterval(() => {
+      this.swapName();
+    }, 2500);
+  }
 
   render() { 
     let navbar = <div className="navbar">
                     <div class="logo-holder">
-                      <h1 onClick={this.goToHome} className="logo"> Software Developer </h1>
+                      <img id="navbar-image" src={this.state.logoImage[0]} onClick={this.goToHome} className="logo"></img>
                     </div>
                     <div class="container">
                       <a onClick={this.goToCV} > CV </a>  <a onClick={this.goToContact} id="contact"> Contact </a>   <a onClick={this.goToProjects}> Projects </a>
@@ -46,6 +57,7 @@ export default class Graysweb extends Component {
       if(this.state.showing == 'landingPage') {
     return (
       <div>
+        {this.startSayingHello}
         {navbar}
         <div>
           <LandingPage/>
