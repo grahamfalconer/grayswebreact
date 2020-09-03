@@ -1,6 +1,16 @@
 .App {
+  font-size: 2vw;
   text-align: center;
   font-family: graham;
+  border: 2vw whitesmoke solid;
+  padding-bottom: 70vh;
+  border-bottom: 10vh whitesmoke solid;
+}
+.logo{
+  font-size: 15vw;
+}
+.cv-frame{
+  margin-top: 5%;
 }
 iframe{ 
   margin-top: 2%;
@@ -18,8 +28,37 @@ iframe{
 }
 .ctt-frame{
   height: 50vw;
-
 }
+.blank-line{
+  height: 4vw;
+  background-color: whitesmoke;
+}
+.blank-line, .contact-holder {
+  margin-left: 5%;
+  width: 90%;
+}
+.navbar{
+  border-bottom: 7vw whitesmoke solid;
+}
+.link{
+  cursor: pointer;
+  width: 4vw;
+  height: 4vw;
+}
+.contact-holder{
+  padding-top: 2vw;
+  text-align: right;
+  background-color: steelblue;
+}
+.contact-holder h1{
+  margin-right: 30%;
+  display: inline;
+}
+.contact-holder:hover{
+  background-color: steelblue;
+}
+
+
 h1:hover{
   cursor: pointer;
 }
@@ -32,21 +71,31 @@ h1:hover{
   pointer-events: none;
 }
 .logo-holder {
+  border: whitesmoke solid 5vw ;
+  background-color:steelblue;
   font-family: graham;
-  font-size: 3vw;
+  font-size: 2vw;
+}
+.logo-holder h1{
+  font-size: 5vw;
 }
 .container {
-  height: 4vw;
+  height: 10vw;
   width: 100%;
-  background-color: black;
+  background-color: whitesmoke;
 }
 .container a {
+  background-color: steelblue;
+  padding: 2vw;
+  padding-left: 5vw ;
+  padding-right: 5vw ;
+  border: 0.5vw white solid;
   font-family: graham;
-  font-size: 2.25vw;
+  font-size: 5vw;
   display: inline;
   color: whitesmoke;
-  margin-left: 10vw;
-  margin-right: 10vw;
+  margin-left: 7.5vw;
+  margin-right: 3vw;
 }
 .container a:hover {
   color: coral;
@@ -67,7 +116,7 @@ h1:hover{
   align-items: center;
   justify-content: center;
   font-size: calc(10px + 2vmin);
-  color: black;
+  color: whitesmoke;
 }
 
 .App-link {

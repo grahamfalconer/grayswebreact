@@ -2,127 +2,86 @@ import React, { Component } from 'react'
 import Navbar from './Navbar'
 import CVcomponent from './CVcomponent'
 import Projects from './Projects'
+import Contact from './Contact'
 import { Document, Page } from 'react-pdf';
+import LandingPage from './LandingPage'
 
 
 
 export default class Graysweb extends Component {
   constructor(props){
     super(props);
-    this.defaultState = {
-      showingCV: false,
-      showingContact: false,
-      showingProjects: false,
-    }
     this.state = {
-      showingCV: false,
-      showingContact: false,
-      showingProjects: false,
+      showing: 'landingPage'
     }
-  }
-  goToCV = () => {
-    this.setState(this.defaultState)
-    this.setState({
-      showingCV: true,
-    })
-    console.log(this.state)
-  }
-  goToContact = () => {
-    this.setState(this.defaultState)
-    this.setState({
-      showingContact: true,
-    })
-    console.log(this.state)
-  }
-  goToProjects = () => {
-    this.setState(this.defaultState)
-    this.setState({
-      showingProjects: true,
-    })
-    console.log(this.state)
   }
 
-  render() { // nothing showing
-      if(!this.state.showingCV && !this.state.showingContact && !this.state.showingProjects){
+  goToCV = () => {
+    this.setState({ showing: 'CV' })
+  }
+
+  goToContact = () => {
+    this.setState({ showing: 'contact' })
+  }
+
+  goToProjects = () => {
+    this.setState({ showing: 'projects' })
+  }
+
+  goToHome = () => {
+    this.setState({ showing: 'landingPage' })
+  }
+
+  render() { 
+    let navbar = <div className="navbar">
+                    <div class="logo-holder">
+                      <h1 onClick={this.goToHome} className="logo"> Software Developer </h1>
+                    </div>
+                    <div class="container">
+                      <a onClick={this.goToCV} > CV </a>  <a onClick={this.goToContact} id="contact"> Contact </a>   <a onClick={this.goToProjects}> Projects </a>
+                    </div>
+                </div>
+
+// component 'routes'
+      if(this.state.showing == 'landingPage') {
     return (
       <div>
-          <div className="navbar">
-              <div class="logo-holder">
-                <h1> Graham Falconer </h1>
-              </div>
-              <div class="container">
-                <a onClick={this.goToCV} > CV </a>  <a onClick={this.goToContact} id="contact"> Contact </a>   <a onClick={this.goToProjects}> Projects </a>
-              </div>
-          </div>
-
-          <div>
-            <h1> Landing Page </h1>
-          </div>
-        
-      </div>
-        )
-    }
-    //       CV showing
-    else if(this.state.showingCV && !this.state.showingContact && !this.state.showingProjects){
-      return (
+        {navbar}
         <div>
-          <div className="navbar">
-              <div class="logo-holder">
-                <h1> Graham Falconer </h1>
-              </div>
-              <div class="container">
-                <a onClick={this.goToCV} > CV </a>  <a onClick={this.goToContact} id="contact"> Contact </a>   <a onClick={this.goToProjects}> Projects </a>
-              </div>
-          </div>
-
-          <div>
-            
-          <CVcomponent/>
-
-          </div>
-        
+          <LandingPage/>
+        </div>
         </div>
         )
     }
-      //                             contact details showing
-    else if(!this.state.showingCV && this.state.showingContact && !this.state.showingProjects){
+    else if(this.state.showing == 'CV') {
       return (
         <div>
-          <div className="navbar">
-              <div class="logo-holder">
-                <h1> Graham Falconer </h1>
-              </div>
-              <div class="container">
-                <a onClick={this.goToCV} > CV </a>  <a onClick={this.goToContact} id="contact"> Contact </a>   <a onClick={this.goToProjects}> Projects </a>
-              </div>
-          </div>
-                    
+          {navbar}
           <div>
-            <h1> Showing Contact info </h1>
+            <CVcomponent/>
           </div>
-        
         </div>
         )
     }
-    //                                                              projects showing
-    else if(!this.state.showingCV && !this.state.showingContact && this.state.showingProjects){
+    else if(this.state.showing == 'contact'){
       return (
         <div>
-          <div className="navbar">
-              <div class="logo-holder">
-                <h1> Graham Falconer </h1>
-              </div>
-              <div class="container">
-                <a onClick={this.goToCV} > CV </a>  <a onClick={this.goToContact} id="contact"> Contact </a>   <a onClick={this.goToProjects}> Projects </a>
-              </div>
+          {navbar}
+          <div>
+            <Contact/>
           </div>
-
+        </div>
+        )
+    }
+    else if(this.state.showing == 'projects'){
+      return (
+        <div>
+          {navbar}
           <div>
             <Projects/>
           </div>
-
         </div>
         )
-    }
+    } 
   }
 }
