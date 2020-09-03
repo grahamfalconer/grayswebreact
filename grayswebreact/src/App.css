@@ -16,19 +16,24 @@
 iframe{ 
   margin-top: 2%;
   padding: 1vw;
-  width: 80%;
+  width: 50%;
   height: 70vw;
   border: rgba(0,0,0,0.5) 0.5vw solid;
 }
 .piano{
-  height: 45vw;
+  height: 30vw;
+}
+.mission-ctrl{
+  width: 60%;
+  height: 35vw;
 }
 .honda{
-  height: 37vw;
+  height: 23vw;
   overflow: hidden;
 }
 .ctt-frame{
-  height: 50vw;
+  height: 35vw;
+  width: 60%;
 }
 .blank-line{
   height: 4vw;
