@@ -142,6 +142,11 @@ h1:hover{
   margin-left: 7.5vw;
   margin-right: 3vw;
 }
+#cv-button:hover, #downloadCvButton:hover{
+  border: 0.5vw rgba(250, 250, 250,0.5) solid;
+  animation-name: bouncing;
+  animation-duration: 1s;
+}
 .project-holder, .mission-holder {
   margin-bottom: 8vw;
   border: 1vw solid black;
@@ -152,22 +157,17 @@ h1:hover{
 .mission-holder {
   width: 80%;
 }
-.tagline {
-  color: coral;
-
-} 
-
+.project-holder p, .mission-holder p {
+  font-size: 1.5vw;
+}
 .project-holder a, .mission-holder a{
   color: blue;
   cursor: pointer;
 }
-#cv-button:hover, #downloadCvButton:hover{
-  border: 0.5vw rgba(250, 250, 250,0.5) solid;
-  animation-name: bouncing;
-  animation-duration: 1s;
+.tagline {
+  color: coral;
 
-}
-
+} 
 
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
