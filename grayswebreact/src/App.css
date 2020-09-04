@@ -151,6 +151,10 @@ h1:hover{
 .mission-holder {
   width: 80%;
 }
+.tagline {
+  color: coral;
+
+} 
 
 .project-holder a, .mission-holder a{
   color: blue;

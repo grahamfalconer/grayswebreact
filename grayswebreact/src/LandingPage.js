@@ -7,6 +7,7 @@ export default class LandingPage extends Component {
   render() {
     return (
       <div>
+        <p class="tagline"> If the massive spinning translucent grey React logo hasn't impressed you... feel free to move on. </p>
         <Logo/>
         
       </div>
