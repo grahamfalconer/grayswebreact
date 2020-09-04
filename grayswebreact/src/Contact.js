@@ -8,11 +8,11 @@ export default class Contact extends Component {
       <div>
         <h1> Where to find me? </h1>
         <div className="contact-holder">
-          <img className="link" src={process.env.PUBLIC_URL + '/images/githublogo.png'}></img><h1 href="https://github.com/grahamfalconer">Github</h1>
+          <img className="link" src={process.env.PUBLIC_URL + '/images/githublogo.png'}></img><a href="https://github.com/grahamfalconer"><h1>Github</h1></a>
         </div>
         <div className="blank-line"></div>
         <div className="contact-holder">
-          <img className="link" src={process.env.PUBLIC_URL + '/images/linkedin.png'}></img><h1 href="https://www.linkedin.com/in/graham-falconer-696b0716b/">LinkedIn</h1>
+          <img className="link" src={process.env.PUBLIC_URL + '/images/linkedin.png'}></img><a href="https://www.linkedin.com/in/graham-falconer-696b0716b/"><h1>LinkedIn</h1></a>
         </div>
         <div className="blank-line"></div>
         <div className="contact-holder">
