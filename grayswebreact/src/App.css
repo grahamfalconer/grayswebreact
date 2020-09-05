@@ -8,6 +8,10 @@
 }
 .App a{
   text-decoration: none;
+  cursor: pointer;
+}
+.bottom-bar a:hover{
+  color: white;
 }
 .logo{
   height: 10vw;
@@ -166,12 +170,19 @@ h1:hover{
 }
 .tagline {
   color: coral;
-
 } 
+.bottom-bar{
+  width: 80%;
+  margin-left: 10%;
+  position: absolute;
+  background-color: rgba(86, 101, 115, 0.5);
+  bottom: 0;
+
+}
 
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
-    animation: App-logo-spin infinite 5s linear;
+    animation: App-logo-spin infinite 15s linear;
   }
 }
 

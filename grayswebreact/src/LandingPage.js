@@ -9,6 +9,9 @@ export default class LandingPage extends Component {
       <div>
         <p class="tagline"> If this massive spinning translucent grey React logo hasn't impressed you... feel free to move on. </p>
         <Logo/>
+        <div class="bottom-bar">
+          <p> View my <a href="https://github.com/grahamfalconer">Github</a></p>
+        </div>
         
       </div>
     )
