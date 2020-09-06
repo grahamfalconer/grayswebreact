@@ -49,7 +49,7 @@ export default class Graysweb extends Component {
                       <img id="navbar-image" src={this.state.logoImage[0]} onClick={this.goToHome} className="logo"></img>
                     </div>
                     <div class="container">
-                      <a onClick={this.goToCV} > CV </a>  <a onClick={this.goToContact} id="contact"> Contact </a>   <a onClick={this.goToProjects}> Projects </a>
+                      <a onClick={this.goToProjects}> Projects </a>  <a onClick={this.goToCV} > CV </a>  <a onClick={this.goToContact} id="contact"> Contact </a>   
                     </div>
                 </div>
 

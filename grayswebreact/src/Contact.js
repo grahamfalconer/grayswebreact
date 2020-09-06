@@ -20,7 +20,7 @@ export default class Contact extends Component {
         </div>
         <div className="blank-line"></div>
         <div className="contact-holder">
-        <a href="tel:+44796477988"><img className="link" src={process.env.PUBLIC_URL + '/images/phone.png'}></img><h1>Phone Number: +44796477988 </h1></a>
+        <a href="tel:+44796477988"><img className="link" src={process.env.PUBLIC_URL + '/images/phone.png'}></img><h1>07796477988</h1></a>
         </div>
         <div className="blank-line"></div>
         
