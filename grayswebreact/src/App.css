@@ -72,7 +72,7 @@ iframe{
 
 }
 .contact-holder a, h1{
-  font-size: 2.5em;
+  font-size: 10vw;
   color: #FFFFFF;
   text-decoration: none;
 }
@@ -163,6 +163,18 @@ h1:hover{
   width: 45%;
   height: 45%;
 }
+button{
+  cursor: pointer;
+  font-family: graham;
+  font-size: 1vw;
+
+}
+.close{
+  position: absolute;
+  top: 2.5%;
+  right: 5%;
+
+}
 .mission-holder {
   width: 80%;
 }
@@ -177,10 +189,12 @@ h1:hover{
   color: coral;
 } 
 .bottom-bar{
+  border-radius: 5vw;
   width: 80%;
+  height: 5vw;
   margin-left: 10%;
-  position: absolute;
   background-color: rgba(86, 101, 115, 0.5);
+  position: fixed;
   bottom: 5%;
 
 }

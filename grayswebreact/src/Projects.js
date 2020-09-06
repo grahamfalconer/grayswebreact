@@ -38,7 +38,7 @@ export default class Projects extends Component {
             <p> Github repo available <a> here </a></p>
         </div>
         <div class="project-holder">
-          <h2> My Portfolio (React.js) </h2>
+          <h2> My Portfolio (React.js, CSS) </h2>
           <iframe className="ctt-frame" src="http://grahamfalconer.surge.sh/"></iframe>
           <p> • Weird that you are reading a description for this seeing as you are on it, but oh well... </p>
           <p> • This project allows you to download and view a PDF of my CV, view my side projects as well as gives you the option to contact me  </p>

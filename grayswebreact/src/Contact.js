@@ -6,7 +6,6 @@ export default class Contact extends Component {
 
     return (
       <div>
-        <h1> Where to find me? </h1>
         <div className="contact-holder">
           <img className="link" src={process.env.PUBLIC_URL + '/images/githublogo.png'}></img><a href="https://github.com/grahamfalconer"><h1>Github</h1></a>
         </div>

@@ -1,20 +1,46 @@
-import React from 'react';
+import React, { Component } from 'react';
 import './App.css';
 import Graysweb from './Graysweb'
-import { Document, Page } from 'react-pdf';
 
 
+export default class App extends Component {
 
-function App() {
+  constructor(){
+    super()
+    this.state = {
+      overlayShowing: true,
+    }
+  }
 
-  return (
-    <div className="App">
-      <Graysweb/>
-    </div>
-  );
+
+  removeOverlay = () => {
+    this.state.overlayShowing ? this.setState({ overlayShowing: false }) : this.setState({ overlayShowing: false })
+  }
+
+  render() {
+    if(this.state.overlayShowing){
+      return (
+        <div className="App">
+          <Graysweb/>
+          <div class="bottom-bar">
+            <p> View my <a href="https://github.com/grahamfalconer">Github</a> <button onClick={this.removeOverlay} class="close">X</button> </p>
+          </div>
+          
+        </div>
+      )
+    } else {
+      return (
+        <div className="App">
+          <Graysweb/>
+        </div>
+      )
+    }
+
+  }
 }
 
-export default App;
+
+
 
 
 
