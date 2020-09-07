@@ -1,4 +1,5 @@
-import React, { Component } from 'react'
+import React, { Component } from 'react';
+import bankTechTest from './bank_tech_test.png';
 
 export default class Projects extends Component {
   render() {
@@ -14,10 +15,17 @@ export default class Projects extends Component {
             <p> Github repo available <a>here</a> </p>
         </div>
         <div class="project-holder">
-            <h2> Cant Touch This  (Javascript, HTML, CSS) </h2>
-            <iframe className="ctt-frame" src="http://canttouchthis.surge.sh/" ></iframe>
-            <p> • McHammer was right when he said "you can't touch this"</p>
-            <p> • Just press play and see how many times you can tap on McHammer in one minute! </p>
+            <h2> Bank Tech Test (Ruby) </h2>
+            <img id="bankTechTest" src={bankTechTest}></img>
+            <p> • A recreation of a Bank Account with features such as withdraw, deposit and balance.
+                • Instructions on how to use it can be found at the projects README on github </p>
+            <div class="blank-line"> </div>
+            <p> Github repo available <a> here </a> </p>
+        </div>
+        <div class="project-holder">
+            <h2> Gapagbook (Ruby on Rails, PostgreSQL, Bulma) </h2>
+            <img id="bankTechTest" src={bankTechTest}></img>
+            <p> • A recreation of facebook completed with user signups, logins, posts, comments etc ...  </p>
             <div class="blank-line"> </div>
             <p> Github repo available <a> here </a> </p>
         </div>

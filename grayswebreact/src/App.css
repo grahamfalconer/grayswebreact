@@ -163,18 +163,43 @@ h1:hover{
   width: 45%;
   height: 45%;
 }
-button{
+.bottom-bar{
+  font-size: 5vh;
+  border-radius: 5vw;
+  width: 80%;
+  height: 20vh;
+  margin-left: 10%;
+  background-color: rgba(86, 101, 115, 0.5);
+  position: fixed;
+  bottom: 5%;
+}
+#bankTechTest {
+  width: 35vw;
+  padding-bottom: 5vw;
+}
+.bottom-bar button{
+  display: inline-block;
+  width: 8vh;
+  height: 5vh;;
   cursor: pointer;
   font-family: graham;
-  font-size: 1vw;
+  font-size: 3.5vh;
+}
+.bottom-bar p, .bottom-bar a{
+  font-size: 8vh;
+  display: inline-block;
+
 
 }
 .close{
   position: absolute;
   top: 2.5%;
   right: 5%;
-
 }
+.tagline {
+  font-size: 6vh;
+  color: coral;
+} 
 .mission-holder {
   width: 80%;
 }
@@ -185,23 +210,11 @@ button{
   color: blue;
   cursor: pointer;
 }
-.tagline {
-  color: coral;
-} 
-.bottom-bar{
-  border-radius: 5vw;
-  width: 80%;
-  height: 5vw;
-  margin-left: 10%;
-  background-color: rgba(86, 101, 115, 0.5);
-  position: fixed;
-  bottom: 5%;
 
-}
 
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
-    animation: App-logo-spin infinite 15s linear;
+    animation: App-logo-spin infinite 60s linear;
   }
 }
 
