@@ -24,6 +24,7 @@ export default class App extends Component {
           <Graysweb/>
           <div class="bottom-bar">
             <p> View my <a href="https://github.com/grahamfalconer">Github</a> <button onClick={this.removeOverlay} class="close">X</button> </p>
+
           </div>
           
         </div>
