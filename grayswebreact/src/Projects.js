@@ -1,7 +1,12 @@
 import React, { Component } from 'react';
 import bankTechTest from './bank_tech_test.png';
+import gapagBook from './gapagbook.png';
 
 export default class Projects extends Component {
+  constructor(){
+    super()
+    
+  }
   render() {
     return (
       <div>
@@ -24,7 +29,7 @@ export default class Projects extends Component {
         </div>
         <div class="project-holder">
             <h2> Gapagbook (Ruby on Rails, PostgreSQL, Bulma) </h2>
-            <img id="bankTechTest" src={bankTechTest}></img>
+            <img id="bankTechTest" src={gapagBook}></img>
             <p> • A recreation of facebook completed with user signups, logins, posts, comments etc ...  </p>
             <div class="blank-line"> </div>
             <p> Github repo available <a> here </a> </p>
