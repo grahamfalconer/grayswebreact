@@ -7,11 +7,11 @@ export default class CVcomponent extends Component {
       showingPDF: false,
     }
   }
+  
   toggleShowCv = () => {
     this.state.showingPDF ? this.setState({ showingPDF: false }) : this.setState({ showingPDF: true })
   }
 
-  
   render() {
     let downloadCvButton = <a href={process.env.PUBLIC_URL + '/CV.pdf'} download id="downloadCvButton"> Download CV </a>
 
@@ -29,7 +29,7 @@ export default class CVcomponent extends Component {
           <a onClick={this.toggleShowCv} id="cv-button"> Hide CV </a>  {downloadCvButton}
           </div>
           <div>
-            <iframe className="cv-frame" src={process.env.PUBLIC_URL + '/CV.pdf'}></iframe>
+            <iframe title="CV" className="cv-frame" src={process.env.PUBLIC_URL + '/CV.pdf'}></iframe>
           </div>
         </div>
       )

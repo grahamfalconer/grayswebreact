@@ -1,14 +1,10 @@
 import React, { Component } from 'react'
-import Navbar from './Navbar'
 import CVcomponent from './CVcomponent'
 import Projects from './Projects'
 import Contact from './Contact'
-import { Document, Page } from 'react-pdf';
 import LandingPage from './LandingPage'
 import graham from './graham.png'
 import software from './software.png'
-
-
 
 export default class Graysweb extends Component {
   constructor(props){
@@ -54,7 +50,7 @@ export default class Graysweb extends Component {
                 </div>
 
 // component 'routes'
-      if(this.state.showing == 'landingPage') {
+      if(this.state.showing === 'landingPage') {
     return (
       <div>
         {this.startSayingHello}
@@ -65,7 +61,8 @@ export default class Graysweb extends Component {
         </div>
         )
     }
-    else if(this.state.showing == 'CV') {
+    
+    else if(this.state.showing === 'CV') {
       return (
         <div>
           {navbar}
@@ -75,7 +72,8 @@ export default class Graysweb extends Component {
         </div>
         )
     }
-    else if(this.state.showing == 'contact'){
+
+    else if(this.state.showing === 'contact'){
       return (
         <div>
           {navbar}
@@ -85,7 +83,8 @@ export default class Graysweb extends Component {
         </div>
         )
     }
-    else if(this.state.showing == 'projects'){
+
+    else if(this.state.showing === 'projects'){
       return (
         <div>
           {navbar}

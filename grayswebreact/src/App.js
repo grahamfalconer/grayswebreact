@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import './App.css';
-import Graysweb from './Graysweb'
+import Graysweb from './components/Graysweb'
 
 
 export default class App extends Component {
@@ -12,7 +12,6 @@ export default class App extends Component {
     }
   }
 
-
   removeOverlay = () => {
     this.state.overlayShowing ? this.setState({ overlayShowing: false }) : this.setState({ overlayShowing: false })
   }
@@ -22,8 +21,8 @@ export default class App extends Component {
       return (
         <div className="App">
           <Graysweb/>
-          <div class="bottom-bar">
-            <p> View my <a href="https://github.com/grahamfalconer">Github</a> <button onClick={this.removeOverlay} class="close">X</button> </p>
+          <div className="bottom-bar">
+            <p> View my <a href="https://github.com/grahamfalconer">Github</a> <button onClick={this.removeOverlay} className="close">X</button> </p>
 
           </div>
           
@@ -39,10 +38,3 @@ export default class App extends Component {
 
   }
 }
-
-
-
-
-
-
-
