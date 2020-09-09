@@ -24,7 +24,6 @@
 iframe{ 
   margin-top: 2%;
   padding: 1vw;
-  width: 50%;
   height: 70vw;
   border: rgba(0,0,0,0.5) 0.5vw solid;
 }
@@ -41,7 +40,7 @@ iframe{
   overflow: hidden;
 }
 .ctt-frame {
-  height: 17vw;
+  height: 35vw;
   width: 60%;
 }
 .blank-line {
@@ -157,7 +156,8 @@ h1:hover{
 }
 .project-holder, .mission-holder {
   margin-bottom: 8vw;
-  border: 1vw solid white;
+  /* border: 1vw solid white; */
+  border: 0.5vw rgba(0,0,0,0.1) dashed ;
   display: inline-block;
   width: 45%;
   height: 45%;
@@ -173,9 +173,9 @@ h1:hover{
   z-index: 50;
   bottom: 5%;
 }
-.project-image {
+.project-image, iframe {
+  padding: 1vw;
   width: 35vw;
-  padding-bottom: 5vw;
 }
 .bottom-bar button{
   display: inline-block;
@@ -205,8 +205,10 @@ h1:hover{
 }
 .project-holder p, .mission-holder p {
   font-size: 3.5vh;
+  font-family: 'Times New Roman', Times, serif;
 }
 .project-holder a, .mission-holder a{
+  /* font-family: 'Times New Roman', Times, serif; */
   color: blue;
   cursor: pointer;
 }
