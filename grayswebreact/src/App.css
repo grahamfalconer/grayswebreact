@@ -162,6 +162,9 @@ h1:hover{
   width: 45%;
   height: 45%;
 }
+.mission-holder h2 {
+  font-size: 7vw;
+}
 .bottom-bar{
   font-size: 5vh;
   border-radius: 5vw;

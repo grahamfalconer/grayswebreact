@@ -26,7 +26,7 @@ export default class Projects extends Component {
             <p> Live version hosted <a href="http://mission-ctrl.surge.sh/">here</a> </p>
         </div>
         <div class="blank-line"></div>
-        <div class="project-holder">
+        <div class="mission-holder">
             <h2> Bank Tech Test (Ruby) </h2>
             <img className="project-image" src={bankTechTest}></img>
             <p>  A recreation of a Bank Account with features such as withdraw, deposit and balance.</p>
@@ -34,7 +34,7 @@ export default class Projects extends Component {
             <div class="blank-line"> </div>
             <p> Github repo available <a href="https://github.com/grahamfalconer/Bank_tech_task"> here </a> </p>
         </div>
-        <div class="project-holder">
+        <div class="mission-holder">
             <h2> Gapagbook (Ruby on Rails, PostgreSQL, Bulma) </h2>
             <img className="project-image" src={gapagBook}></img>
             <p> A recreation of facebook completed with user signups, logins, posts, comments etc ...  </p>
@@ -43,7 +43,7 @@ export default class Projects extends Component {
             <p> Live version hosted <a href="https://gapag1.herokuapp.com/">here</a> </p>
         </div>
         <div class="blank-line"></div>
-        <div class="project-holder">
+        <div class="mission-holder">
             <h2> Honda The Other Side Remake (Javascript, HTML, CSS) </h2>
             <img className="project-image" src={honda}></img>
             <p> In this project I recreated the custom video player from the 2015 Honda Civic R 'other side' commercial </p>
@@ -52,7 +52,7 @@ export default class Projects extends Component {
             <p> Github repo available <a href="https://github.com/grahamfalconer/hondaR-otherside"> Here </a> </p>
             <p> Live version hosted <a href="http://honda-theotherside.surge.sh/">here</a> </p>
         </div>
-        <div class="project-holder">
+        <div class="mission-holder">
             <h2> Graham's Haunted Piano (Javascript, HTML, CSS) </h2>
             <img className="project-image" src={piano}></img>
             <p>  A Piano that you can play on your keyboard  </p>
