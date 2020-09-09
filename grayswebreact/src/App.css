@@ -170,9 +170,10 @@ h1:hover{
   margin-left: 10%;
   background-color: rgba(86, 101, 115, 0.5);
   position: fixed;
+  z-index: 50;
   bottom: 5%;
 }
-#bankTechTest {
+.project-image {
   width: 35vw;
   padding-bottom: 5vw;
 }
