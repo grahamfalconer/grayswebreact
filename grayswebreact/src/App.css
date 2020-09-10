@@ -67,7 +67,7 @@ iframe{
   height:20vh;
   padding-top: 2vw;
   text-align: right;
-  background-color: steelblue;
+  background-color: steelBlue;
 }
 .contact-holder h1{
   margin-right: 30%;
@@ -82,7 +82,7 @@ iframe{
   color: coral;
 }
 .contact-holder:hover{
-  background-color: steelblue;
+  background-color: steelBlue;
 }
 
 
@@ -102,7 +102,7 @@ h1:hover{
 }
 .logo-holder {
   border: whitesmoke solid 5vw ;
-  background-color:steelblue;
+  background-color:steelBlue;
   font-family: graham;
   font-size: 2vw;
 }
@@ -117,7 +117,7 @@ h1:hover{
 .container a {
   position: relative;
   z-index: 100;
-  background-color: steelblue;
+  background-color: steelBlue;
   padding: 2vw;
   padding-left: 5vw ;
   padding-right: 5vw ;

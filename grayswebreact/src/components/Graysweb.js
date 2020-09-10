@@ -4,7 +4,7 @@ import Projects from './Projects'
 import Contact from './Contact'
 import LandingPage from './LandingPage'
 import graham from './graham.png'
-import software from './software.png'
+import grahamLogo from './grahamlogo.png'
 
 export default class Graysweb extends Component {
   constructor(props){
@@ -31,12 +31,12 @@ export default class Graysweb extends Component {
     this.setState({ showing: 'landingPage' })
   }
   swapName = () => {
-    this.state.logoImage[1] ? this.setState({ logoImage: [software, false] }) : this.setState({ logoImage: [graham, true] })
+    this.state.logoImage[1] ? this.setState({ logoImage: [grahamLogo, false] }) : this.setState({ logoImage: [graham, true] })
   }
   componentDidMount = () => {
     setInterval(() => {
       this.swapName();
-    }, 2500);
+    }, 3500);
   }
 
   render() { 
@@ -61,7 +61,7 @@ export default class Graysweb extends Component {
         </div>
         )
     }
-    
+
     else if(this.state.showing === 'CV') {
       return (
         <div>
