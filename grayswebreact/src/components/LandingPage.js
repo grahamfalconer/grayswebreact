@@ -12,7 +12,6 @@ export default class LandingPage extends Component {
   }
 
   render() {
-
     return (
       <div>
         <p class="tagline"> Welcome to my portfolio... I am currently jobseeking and any assistance is appreciated! </p>

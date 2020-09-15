@@ -21,6 +21,18 @@ export default class Projects extends Component {
             <p> Live version hosted <a href="http://mission-ctrl.surge.sh/">here</a> </p>
         </div>
 
+        <div className="blank-line"></div>
+        
+        <div className="mission-holder">
+          <h2> Grahams Ghosts (Javascript) </h2>
+          <iframe title="GrahamsGhosts" className="ghost-frame" src="http://grahamsghosts.surge.sh"></iframe>
+          <p>   In this classic click and shoot arcade game, your objective is to stay alive as long as possible</p>
+          <p>   (Warning: This game can be quite freaky and somewhat addictive)  </p>
+          <div className="blank-line"> </div>
+          <p> Github repo available <a href="https://github.com/grahamfalconer/ghost-and-ghouls-arcade-game"> here </a></p>
+          <p> Live Version hosted <a href="http://grahamsghosts.surge.sh">here</a> </p>
+        </div>
+
         <div classNames="blank-line"></div>
 
         <div className="mission-holder">

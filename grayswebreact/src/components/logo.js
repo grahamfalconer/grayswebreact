@@ -13,7 +13,6 @@ export default class Logo extends Component {
     return (
       <div>
         <img src={logo} className="App-logo" alt="logo" />
-        
       </div>
     )
   }

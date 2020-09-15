@@ -43,6 +43,10 @@ iframe{
   height: 35vw;
   width: 60%;
 }
+.ghost-frame {
+  height: 27.5vw;
+  width: 60%;
+}
 .blank-line {
   height: 4vw;
   background-color: whitesmoke;
