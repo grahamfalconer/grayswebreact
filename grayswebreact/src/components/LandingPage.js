@@ -14,7 +14,7 @@ export default class LandingPage extends Component {
   render() {
     return (
       <div>
-        <p class="tagline"> Welcome to my portfolio... I am currently jobseeking and any assistance is appreciated! </p>
+        <p class="tagline"> I am passionate and motivated Junior Developer and graduate of <a href="https://makers.tech/"> Makers Academy </a> coding bootcamp. I am up to date with all modern coding practices including T.D.D, B.D.D and Object Oriented Programming. Furthermore I also am used to working in an Agile environment and have training in empathy, mindfulness and following Extreme Programming principles. I am currently looking for a team of like-minded and enthusiastic developers so that I may further consolidate these skills in a professional environment. Currently based in London, UK. </p>
         <Logo/>
         
       </div>
